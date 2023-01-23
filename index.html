@@ -24,6 +24,11 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-modal">
+        <button type="button" class="close-modal" data-modal-close>x</button>
+      </div>
+    </div>
     <div class="container">
       <header class="page-header">
         <a class="logo" href="/"><span class="web-logo">Web</span>Studio</a>
@@ -59,9 +64,9 @@
         <section class="heading-section">
           <div class="flex-container">
           <h1 class="heading">EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-          <button class="request-button" type="button">
+          <div class="section-inner"><button class="request-button " type="button" data-modal-open >
             Request our service
-          </button>
+          </button></div>
       
         </section>
       </div>
@@ -390,6 +395,6 @@
         </address>
        </div>
       </footer>
-   
+      <script src="js/modal.js"></script>
   </body>
 </html>
